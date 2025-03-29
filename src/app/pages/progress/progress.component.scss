@@ -1,0 +1,91 @@
+.progress-summary {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+.progress-bar-container {
+  width: 100%;
+  background: #e9ecef;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 15px 0;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 0%;
+  background: #28a745;
+  transition: width 0.5s ease-in-out;
+}
+
+.message {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 15px;
+}
+
+.home-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+
+  &:hover {
+    background: #0056b3;
+  }
+
+  &:active {
+    background: #004494;
+    transform: scale(0.98);
+  }
+}
+
+@media (max-width: 480px) {
+  .progress-summary {
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .message {
+    font-size: 16px;
+  }
+
+  .home-button {
+    font-size: 16px;
+  }
+}

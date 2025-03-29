@@ -1,0 +1,19 @@
+/* Dark Mode */
+body.dark-mode {
+    background: #1e1e1e;
+    color: white;
+  }
+  .dark-mode .container {
+    background: #333;
+    color: white;
+  }
+  .dark-mode button {
+    background: #444;
+    color: white;
+  }
+  .dark-mode input, .dark-mode select {
+    background: #555;
+    color: white;
+    border: 1px solid white;
+  }
+  

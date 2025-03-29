@@ -1,0 +1,15 @@
+<div class="tracker-container">
+  <h2>Workout Progress</h2>
+  <p>User: {{ username }}</p>
+
+  <h3>Workout: {{ selectedWorkout }}</h3>
+  <p>Duration: {{ duration }} mins</p>
+
+  <div class="progress-bar">
+    <div class="progress-fill" [style.width.%]="progress"></div>
+  </div>
+
+  <p>{{ message }}</p>
+
+  <button (click)="stopWorkout()">Stop Workout</button>
+</div>

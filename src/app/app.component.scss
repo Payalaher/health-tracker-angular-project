@@ -1,0 +1,59 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  nav a.active {
+    border-bottom: 2px solid #007bff;
+  }
+  
+  button {
+    background: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .dark-mode {
+    background: #1e1e1e;
+    color: white;
+  }
+  
+  .dark-mode .container {
+    background: #333;
+  }
+  
+  .dark-mode nav a {
+    color: #ffce56;
+  }
+  
+  .dark-mode button {
+    background: #444;
+  }
+  

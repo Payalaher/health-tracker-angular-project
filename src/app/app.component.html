@@ -1,0 +1,17 @@
+<div class="container">
+  <header>
+    <h1>{{ title }}</h1>
+    <nav>
+      <a routerLink="/" routerLinkActive="active">🏠 Home</a>
+      <a routerLink="/tracker" routerLinkActive="active">📊 Tracker</a>
+      <a routerLink="/workouts" routerLinkActive="active">💪 Workouts</a>
+      <a routerLink="/progress" routerLinkActive="active">📈 Progress</a>
+      <a routerLink="/login" routerLinkActive="active">🔑 Login</a>
+    </nav>
+    <button (click)="toggleDarkMode()">🌓 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

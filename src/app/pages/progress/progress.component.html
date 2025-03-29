@@ -1,0 +1,14 @@
+<div class="progress-summary">
+  <h2>Workout Summary</h2>
+  <p><strong>User:</strong> {{ username }}</p>
+  <p><strong>Workout:</strong> {{ selectedWorkout }}</p>
+  
+  <div class="progress-bar-container">
+    <div class="progress-bar" [style.width.%]="progress"></div>
+  </div>
+
+  <p><strong>Progress:</strong> {{ progress.toFixed(1) }}%</p>
+  <p class="message">{{ message }}</p>
+
+  <button class="home-button" routerLink="/">Go to Home</button>
+</div>
